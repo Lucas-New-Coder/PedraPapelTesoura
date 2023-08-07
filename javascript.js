@@ -45,9 +45,9 @@ function jogo(teste) {
     else if(a===b){jogRes.innerHTML=`Foi um empate`,rodadas++,console.log(rodadas)}
     else if(a==='pedra'&&b==='tesoura'){jogRes.innerHTML=`Pedra ganha de Tesoura, você ganhou`,vitJog++,rodadas++,console.log(rodadas)}
     else if(a==='tesoura'&&b==='papel'){jogRes.innerHTML=`Tesoura ganha de Papel, você ganhou`,vitJog++,rodadas++,console.log(rodadas)}
-    else if (a==="papel"&&b==="tesoura"){cpuRes.innerHTML='Perdeu! Tesoura vence Papel',vitCpu++,rodadas++,console.log(rodadas)}
-    else if (a==="tesoura"&&b==="pedra"){cpuRes.innerHTML='Perdeu! Pedra vence Tesoura',vitCpu++,rodadas++,console.log(rodadas)}
-    else if (a==="pedra"&&b==="papel"){cpuRes.innerHTML='Perdeu! Papel vence Pedra',vitCpu++,rodadas++,console.log(rodadas)}
+    else if (a==="papel"&&b==="tesoura"){jogRes.innerHTML='Perdeu! Tesoura vence Papel',vitCpu++,rodadas++,console.log(rodadas)}
+    else if (a==="tesoura"&&b==="pedra"){jogRes.innerHTML='Perdeu! Pedra vence Tesoura',vitCpu++,rodadas++,console.log(rodadas)}
+    else if (a==="pedra"&&b==="papel"){jogRes.innerHTML='Perdeu! Papel vence Pedra',vitCpu++,rodadas++,console.log(rodadas)}
     
         
     if (rodadas===5&&vitJog>vitCpu){final.innerHTML='Você venceu, parabéns'} else if(rodadas===5&&vitJog<vitCpu){final.innerHTML='Você perdeu, que pena'}else if(rodadas===5&&vitJog===vitCpu){final.innerHTML='Vocês empataram, impressionante'}
