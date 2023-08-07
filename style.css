@@ -1,0 +1,224 @@
+body, *{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: rgb(113, 124, 155);
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 76% 60%) 0%,
+  hsl(270deg 65% 54%) 7%,
+  hsl(292deg 61% 47%) 14%,
+  hsl(309deg 73% 45%) 21%,
+  hsl(320deg 81% 47%) 27%,
+  hsl(329deg 78% 50%) 33%,
+  hsl(339deg 81% 55%) 39%,
+  hsl(349deg 80% 58%) 44%,
+  hsl(0deg 76% 61%) 50%,
+  hsl(11deg 73% 58%) 55%,
+  hsl(20deg 68% 55%) 60%,
+  hsl(24deg 67% 56%) 64%,
+  hsl(23deg 69% 60%) 68%,
+  hsl(23deg 71% 65%) 72%,
+  hsl(23deg 74% 70%) 76%,
+  hsl(22deg 76% 74%) 80%,
+  hsl(22deg 79% 79%) 84%,
+  hsl(22deg 82% 83%) 87%,
+  hsl(22deg 85% 87%) 90%,
+  hsl(21deg 88% 92%) 94%,
+  hsl(21deg 91% 96%) 97%,
+  hsl(0deg 0% 100%) 100%
+);
+    background-size: cover;
+    height: 1080px;
+ 
+    
+   
+}
+
+.header {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    animation: 1000ms aumentar;
+    flex: 1;
+}
+
+h1 {
+    padding: 10px;
+    background-color: rgb(86, 93, 142);
+    color: rgb(235, 251, 251);
+    font-size: 30pt;
+    border-radius: 15px;
+    animation: 1500ms aumentar;
+    
+}
+
+@keyframes aumentar{
+    0%{
+        transform: scale(0%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+.mainText{
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.35);
+    border-radius: 3rem;
+    
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    flex: 1;
+    padding: 25px;
+    animation: 1000ms aumentar;
+   
+   
+}
+.mainText p{
+    align-items: center;
+    justify-content: center;
+    line-height: 30pt;
+    display: flex;
+    font-size: 20pt;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+    
+    
+}
+
+.jogo {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.escolha {
+  background-color: white;
+  box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 350px;
+
+  border-radius: 15px;
+  animation: 1000ms aumentar;
+}
+
+.escolha p {
+    font-size: 18pt;
+    margin-top: 10px;
+}
+
+.opções {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 200px;
+    animation: 1500ms aumentar;
+    
+}
+.opções>*{
+    margin: 8px;
+    cursor: pointer;
+    transition: transform 800ms;
+}
+
+.opções>*:hover{
+    transform: translateY(-15px);
+    transition: transform 500ms;
+  
+}
+
+.escolhaCpu {
+    background-color: white;
+    box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.35);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 350px;
+    border-radius: 15px;
+    animation: 1000ms aumentar;
+  }
+
+  .escolhaCpu p {
+    font-size: 18pt;
+    margin-top: 10px;
+}
+
+  .opçõesCpu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 200px;
+      animation: 1500ms aumentar;
+      
+  }
+  .opçõesCpu>*{
+      margin: 8px;
+      cursor: pointer;
+      transition: transform 800ms;
+  }
+
+  .opçõesCpu>*:hover{
+    transform: translateY(-15px);
+    transition: transform 500ms;
+  
+}
+  #placar {
+    border: dotted;
+    padding: 10px;
+    font-size: 20pt;
+    text-align: center;
+    line-height: 30pt;
+    animation: 1000ms aumentar;
+  }
+
+  .placar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+
+  .rodadas {
+    font-size: 15pt;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30pt;
+    flex-wrap: wrap;
+    display: flex;
+   
+    
+    
+  }
+
+  #jogResult {
+    padding: 20px;
+    animation: 1000ms aumentar;
+  }
+    #cpuResult {
+    padding: 20px;
+    animation: 1000ms aumentar;
+  }
+
+  #final{
+    font-size: 13pt;
+    font-weight: bold;
+  }

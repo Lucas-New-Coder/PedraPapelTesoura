@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Pedra, Papel, Tesoura</title>
+</head>
+<body>
+  <div class="header">
+    <h1> Pedra, Papel, Tesoura</h1>
+  </div>
+<div class="mainText">
+  <p>Vamos jogar um jogo de <strong>Pedra, Papel e 
+    Tesoura,</strong> melhor de 5</p>
+</div>
+
+<div class="jogo">
+  <div class="escolha">
+    <p>Faça sua escolha:</p>
+      <div class="opções">
+        <img src="pedra-02.svg" alt="pedra"onclick="jogo('pedra')">
+        <img src="papel-03.svg" alt="papel"onclick="jogo('papel')">
+        <img src="tesoura-04.svg" alt="tesoura"onclick="jogo('tesoura')">
+      </div>
+      <p id="jogResult"></p>
+  </div>
+  <div class="placar">
+  <p id="placar"></p>
+  <p class="rodadas">Rodadas:</p>
+  <p id="final"></p>
+  </div>
+  
+  <div class="escolhaCpu">
+    <p>Computador:</p>
+      <div class="opçõesCpu">
+        <img src="pedra-02.svg" alt="pedra" >
+        <img src="papel-03.svg" alt="papel" >
+        <img src="tesoura-04.svg" alt="tesoura">
+       
+      </div>
+
+ <p id="cpuResult"></p>
+</div>
+
+
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
